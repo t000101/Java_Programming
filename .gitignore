@@ -2,3 +2,5 @@
 out
 /bin/
 src/leetcode
+.classpath
+.project
