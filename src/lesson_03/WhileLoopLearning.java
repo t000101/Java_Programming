@@ -14,14 +14,8 @@ public class WhileLoopLearning {
         boolean isContinuing = true;
 
         while(isContinuing){
-            System.out.println("=== Game Menu ===");
-            System.out.println("1. Generate random number(less than 1000)");
-            System.out.println("0. Exit!");
-
-            Scanner sc = new Scanner(System.in);
-            System.out.print("Please select option: ");
-            int option = sc.nextInt();
-
+            printSimpleMenu();
+            int option = getUserOption();
             if(option == 0){
                 isContinuing = false;
             }else if(option == 1){
@@ -33,5 +27,17 @@ public class WhileLoopLearning {
             System.out.println("See you again!");
 
         }
+    }
+
+    private static int getUserOption() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please select option: ");
+        return sc.nextInt();
+    }
+
+    private static void printSimpleMenu() {
+        System.out.println("=== Game Menu ===");
+        System.out.println("1. Generate random number(less than 1000)");
+        System.out.println("0. Exit!");
     }
 }
