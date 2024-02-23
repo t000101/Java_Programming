@@ -3,11 +3,11 @@ package lab_exercises;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Appium_K5_Lab3_Ex1 {
+public class Calculate_Minutes_From_String {
     public static void main(String[] args) {
         String myHoursString = "2hrs and 5 minutes";
-        System.out.print("My way => ");
-        System.out.println("The " + myHoursString + " is: " + calculateMinutesFromAString(myHoursString) + ".");
+//        System.out.print("My way => ");
+//        System.out.println("The " + myHoursString + " is: " + calculateMinutesFromAString(myHoursString) + ".");
 
         System.out.print("GPT way => ");
         System.out.println("The " + myHoursString + " is: " + calculateMinutesFromAString_WayOFGPT(myHoursString) + ".");
