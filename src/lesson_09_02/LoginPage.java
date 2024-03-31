@@ -1,5 +1,6 @@
 package lesson_09_02;
 
+// Strongly FORCE IS_A_relationship
 public abstract class LoginPage {
 
     protected  void login(){
