@@ -6,10 +6,10 @@ public class Animal {
     private String name;
     private int speed;
 
-    public Animal(PropertiesOfAnimal propertiesOfAnimal, String name, int speed) {
-        this.propertiesOfAnimal = propertiesOfAnimal;
+    public Animal(String name, int speed, PropertiesOfAnimal propertiesOfAnimal) {
         this.name = name;
         this.speed = speed;
+        this.propertiesOfAnimal = propertiesOfAnimal;
     }
 
     public boolean flyable() {
@@ -22,5 +22,13 @@ public class Animal {
 
     public int getSpeed() {
         return speed;
+    }
+
+    @Override
+    public String toString() {
+        return name + " {" +
+                "speed= " + speed +
+                ", flyAble= " + this.flyable() +
+                '}';
     }
 }
