@@ -3,8 +3,6 @@ package lab_exercises.racing_animal.builder_design_pattern;
 import java.security.SecureRandom;
 import java.util.Arrays;
 
-import static java.util.Arrays.asList;
-
 public class TestAnimal {
     public static void main(String[] args) {
         Animal horse = new Animal.Builder().setName("Horse").setSpeed(new SecureRandom().nextInt(100)).build();

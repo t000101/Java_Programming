@@ -1,0 +1,5 @@
+0001;Git Pocket Guide;Richard E;2023
+0002;Learning Javascript;Addy Os;2014
+0003;Speaking Javascript;Glenn Block;2015
+0004;You Don't Know;Kyle Simpson;2024
+0005;Eloquent Javascript;Marijn Haver;2022
